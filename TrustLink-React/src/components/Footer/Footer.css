@@ -1,0 +1,20 @@
+footer {
+  width: min(var(--page-width), calc(100% - 48px));
+  margin: auto;
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+}
+
+footer p {
+  color: var(--slate);
+  font-size: 14px;
+}

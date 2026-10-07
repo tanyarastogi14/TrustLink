@@ -1,0 +1,142 @@
+.results-section {
+  background: white;
+  padding: 120px 24px;
+}
+
+.results-heading {
+  width: min(var(--page-width), 100%);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.results-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.results-heading h2 em {
+  font-style: italic;
+}
+
+.results-heading p:last-child {
+  max-width: 500px;
+  color: var(--slate);
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter {
+  border: 1px solid #ddd;
+  background: white;
+  color: var(--ink);
+  border-radius: 9999px;
+  padding: 9px 15px;
+  font-size: 13px;
+}
+
+.filter.active {
+  background: var(--ink);
+  color: white;
+  border-color: var(--ink);
+}
+
+.match-table-card {
+  width: min(var(--page-width), 100%);
+  margin: auto;
+  background: var(--mist);
+  border-radius: 24px;
+  padding: 10px 20px;
+}
+
+.table-header,
+.match-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr .8fr .9fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.table-header {
+  color: var(--ash);
+  font-size: 11px;
+  letter-spacing: .05em;
+  padding: 18px 10px;
+}
+
+.match-row {
+  padding: 19px 10px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.match-row strong {
+  font-weight: 500;
+}
+
+.decision {
+  justify-self: start;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.high-decision {
+  background: #e9e9e9;
+  color: var(--ink);
+}
+
+.uncertain-decision {
+  background: var(--peach);
+  color: var(--brown);
+}
+
+.next-stage {
+  width: min(var(--page-width), 100%);
+  margin: 24px auto 0;
+  background: var(--peach);
+  color: var(--brown);
+  border-radius: 24px;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.next-stage h3 {
+  font-size: 24px;
+  font-weight: 450;
+  margin-top: 8px;
+}
+
+.next-stage p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.next-flow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.next-flow span {
+  background: rgba(255,255,255,.35);
+  padding: 9px 12px;
+  border-radius: 999px;
+}

@@ -1,0 +1,53 @@
+.navbar {
+  width: min(var(--page-width), calc(100% - 48px));
+  height: 90px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 20;
+}
+
+.logo,
+.footer-logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  letter-spacing: -1.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a,
+.login {
+  font-size: 16px;
+  transition: opacity .2s ease;
+}
+
+.nav-links a:hover,
+.login:hover {
+  opacity: .55;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-button {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  background: var(--brown);
+}

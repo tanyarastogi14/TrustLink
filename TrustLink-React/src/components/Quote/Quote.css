@@ -1,0 +1,30 @@
+.quote-section {
+  padding: 100px 24px;
+  background: white;
+}
+
+.quote-card {
+  width: min(900px, 100%);
+  margin: auto;
+  background: var(--peach);
+  color: var(--brown);
+  border-radius: 24px;
+  padding: 60px;
+}
+
+.quote-card h3 {
+  font-size: 30px;
+  font-weight: 450;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.quote-card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.quote-card span {
+  font-size: 14px;
+}

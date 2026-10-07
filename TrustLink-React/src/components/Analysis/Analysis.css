@@ -1,0 +1,190 @@
+.analysis-grid {
+  width: min(var(--page-width), 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.analysis-card {
+  background: white;
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.analysis-header h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.small-note {
+  color: var(--slate);
+  font-size: 13px;
+}
+
+.score-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 65px 1fr 50px;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.bar-row strong {
+  font-weight: 500;
+  text-align: right;
+}
+
+.bar-track {
+  height: 8px;
+  background: #eeeeef;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.bar.low {
+  background: #b7b7b9;
+}
+
+.bar.medium {
+  background: #98999c;
+}
+
+.bar.high {
+  background: #777b86;
+}
+
+.bar.highest {
+  background: var(--brown);
+}
+
+.threshold-line {
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--slate);
+}
+
+.threshold-line strong {
+  color: var(--brown);
+  font-weight: 500;
+}
+
+.entity-graph {
+  height: 210px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.graph-node {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: var(--mist);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.graph-node span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.graph-node small {
+  color: var(--slate);
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.source-node {
+  background: var(--ink);
+  color: white;
+}
+
+.source-node small {
+  color: #ccc;
+}
+
+.target-one {
+  margin-top: -80px;
+}
+
+.target-two {
+  margin-top: 80px;
+}
+
+.graph-connection {
+  position: absolute;
+  height: 2px;
+  background: var(--brown);
+  z-index: 1;
+}
+
+.connection-one {
+  left: 100px;
+  right: 100px;
+  top: 67px;
+  transform: rotate(-14deg);
+}
+
+.connection-two {
+  left: 100px;
+  right: 100px;
+  bottom: 67px;
+  transform: rotate(14deg);
+  opacity: .55;
+}
+
+.graph-connection span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 3px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--brown);
+}
+
+.graph-caption {
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--slate);
+  font-size: 12px;
+}
+
+.graph-caption strong {
+  color: var(--ink);
+  font-weight: 500;
+}

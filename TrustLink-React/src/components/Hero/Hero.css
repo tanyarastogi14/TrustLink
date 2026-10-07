@@ -1,0 +1,237 @@
+.hero {
+  width: min(var(--page-width), calc(100% - 48px));
+  min-height: 780px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 160px;
+}
+
+.hero-content {
+  width: 800px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 7vw, 90px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -3px;
+}
+
+.hero h1 em {
+  font-style: italic;
+}
+
+.hero-text {
+  max-width: 530px;
+  margin: 30px auto 32px;
+  color: var(--slate);
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.primary-btn,
+.secondary-btn {
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 9999px;
+  font-size: 16px;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.primary-btn {
+  background: var(--ink);
+  color: white;
+  border: 1px solid var(--ink);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.floating-card {
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  z-index: 3;
+}
+
+.region-card {
+  width: 270px;
+  left: 10px;
+  top: 100px;
+  transform: rotate(-2deg);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--smoke);
+  font-size: 11px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.region-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 13px;
+}
+
+.registration-card {
+  width: 255px;
+  right: 10px;
+  top: 130px;
+  transform: rotate(2deg);
+}
+
+.mini-label {
+  color: var(--ash);
+  font-size: 12px;
+  letter-spacing: .05em;
+}
+
+.metric {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.delta {
+  color: var(--brown);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.delta span {
+  color: var(--slate);
+}
+
+.mini-chart {
+  margin-top: 18px;
+  height: 70px;
+}
+
+.mini-chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.mini-chart path {
+  fill: none;
+  stroke: var(--brown);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.activation-card {
+  width: 290px;
+  left: 50px;
+  bottom: 100px;
+  transform: rotate(1deg);
+}
+
+.activation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle-chart {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: conic-gradient(var(--brown) 0deg 295deg, #eee 295deg 360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-inner {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.composer-card {
+  position: absolute;
+  width: 480px;
+  right: 130px;
+  bottom: 70px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  z-index: 5;
+}
+
+.composer-top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--smoke);
+  font-size: 16px;
+  padding-bottom: 22px;
+}
+
+.composer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.composer-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.composer-icons button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--smoke);
+  border-radius: 50%;
+}
+
+.composer-icons button:hover {
+  background: var(--mist);
+  color: var(--ink);
+}
+
+.send-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: var(--ink);
+  color: white;
+}

@@ -1,0 +1,36 @@
+.metric-grid {
+  width: min(var(--page-width), 100%);
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  background: var(--mist);
+  border-radius: 24px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metric-card strong {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.metric-card > span:last-child {
+  font-size: 13px;
+  color: var(--slate);
+}
+
+.peach-metric {
+  background: var(--peach);
+  color: var(--brown);
+}
+
+.peach-metric .category,
+.peach-metric > span:last-child {
+  color: var(--brown);
+}
